@@ -1,64 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Menu Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Portfolio Website</title>
+    </head>
+    <body>
 
-    <!-- Header with Carousel -->
-    <header id="home">
-        <div class="carousel">
-            <img src="star.jpg" alt="star" class="active">
-            <img src="beautiful-view-tree-with-red-leaves-lake-forest.jpg" alt="nature">
+         <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">MY PORTFOLIO</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#service" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#mywork" class="nav__link">My Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am Sahil Maharjan<br>
+                        <span class="home__title-color">Web Developer</span> </h1>
+
+                    <a href="#" class="button">Contact Me</a>
+                </div>
+
+                <div class="home__img">   
+                    <img src="pic2.jpg" alt="me">
+                </div>
+            </section>
+
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img" >
+                        
+                    </div>
+                    
+                    <div>
+                        <p class="about__text">Hello I'm Sahil Maharjan (Web Developer), a passionate and innovative web developer with a strong flair for crafting captivating online experiences. With a keen eye for design and a love for coding, I thrive on bringing ideas to life through the power of technology.
+                        <br>
+                        <br>
+                        As a web developer, I specialize in designing and making Website, that not only look visually stunning but also provide functionality. From eye-catching landing pages to complex web applications, wesites ,technologies.<br>
+                        I have learn HTML CSS,C/C++,OOP IN JAVA,PYTHON.
+                        </p>     
+                        <div class="nav__logo">
+                          <a href="#" class='bx bxl-html5'></a>
+                          <a href="#" class='bx bxl-c-plus-plus'></a>
+                          <a href="#" class='bx bxl-java'></a>
+                          <a href="#" class='bx bxl-python'><a>
+                      </div>  
+                    </div>                                   
+                </div>
+            </section>
+
+            <section class="service section" id="service">
+                <h2 class="section-title">Services</h2>
+
+                <div class="ag-format-container">
+               <div class="ag-courses_box">
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Web Design  
         </div>
-        <div class="description">
-            <h1>Sahil Maharjan</h1>
-            <p>Welcome to my portfolio! I am a web developer with a passion working for two year.</p>
+
+        <div class="ag-courses-item_date-box">
+          <span class="ag-courses-item_date">
+            <p>As a passionate and skilled web designer, I take great pride in creating visually stunning, user-friendly, and functional websites.I aim to deliver memorable online experiences that leave a lasting impression.</p>
+          </span>
         </div>
-    </header>
+      </a>
+    </div>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor of Computer Applications - Nesfield College</li>
-            <li>Plus 2 - Omega College</li>
-        </ul>
-    </section>
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
 
-    <!-- Professional History Section -->
-    <section id="experience">
-        <h2>Professional History</h2>
-        <ul>
-            <li>Computer System at Texas Tech</li>
-            <li>Cloud Computing at Texas Tech</li>
-        </ul>
-    </section>
+        <div class="ag-courses-item_title">
+            App Design 
+        </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:sahilmaharjan02@gmail.com">sahilmaharjan02@gmail.com</a></p>
-        <p>Phone: 9848418500</p>
-        <p>Address: Dupat,lalitpur</p>
-        <p>Company: Texas Tech</p>
-    </section>
+        <div class="ag-courses-item_date-box">
+          <span class="ag-courses-item_date">
+            <p>With a user-friendly interface, interactive elements, and a focus on visual aesthetics, the app will help users make a lasting impression on potential clients, collaborators, and employers.</p>
+          </span>
+        </div>
+      </a>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; www.webdevloper.com </p>
-    </footer>
-</body>
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+       <div class="ag-courses-item_title">
+         Digital Marketing
+        </div>
+
+        <div class="ag-courses-item_date-box">
+          <span class="ag-courses-item_date">
+            <p>Online marketing promote brands to connect with potential customers using the internet and other forms of digital communication.</p>
+          </span>
+        </div>
+      </a>
+    </div>
+    </div>
+      </section>
+            <section class="work section" id="mywork">
+                <h2 class="section-title">My Work</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="pj1.png" alt="project 1">
+                    </div>
+                    <div class="work__img">
+                        <img src="car.png" alt="project 2">
+                    </div>
+                    <div class="work__img">
+                        <img src="pj3.png" alt="project 3">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact Me</h2>
+
+                 <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-gmail' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__title">www.webdeveloper.com</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-github'></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-gmail' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook-circle'></i></a>
+            </div>
+            <p>&#169; contact for more information</p>
+        </footer>
+    </body>
 </html>
